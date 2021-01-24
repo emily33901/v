@@ -11,8 +11,8 @@ const (
 	win_height = 700
 	bg_color   = gx.white
 	font_paths = [
-		os.resource_abs_path('Imprima-Regular.ttf'),
-		os.resource_abs_path('Graduate-Regular.ttf'),
+		'C:\\windows\\fonts\\Tahoma.ttf',
+		'C:\\windows\\fonts\\FiraCode-Retina.ttf',
 	]
 )
 

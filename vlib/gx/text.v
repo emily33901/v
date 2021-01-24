@@ -1,11 +1,5 @@
 module gx
 
-import fontstash
-
-const (
-	used_import = fontstash.used_import
-)
-
 // TODO: remove these and uae the enum everywhere
 const (
 	align_left = HorizontalAlign.left
@@ -13,16 +7,16 @@ const (
 )
 
 pub enum HorizontalAlign {
-	left = C.FONS_ALIGN_LEFT
-	center = C.FONS_ALIGN_CENTER
-	right = C.FONS_ALIGN_RIGHT
+	left = 0
+	center = 1
+	right = 2
 }
 
 pub enum VerticalAlign {
-	top = C.FONS_ALIGN_TOP
-	middle = C.FONS_ALIGN_MIDDLE
-	bottom = C.FONS_ALIGN_BOTTOM
-	baseline = C.FONS_ALIGN_BASELINE
+	top = 0
+	middle = 1
+	bottom = 2
+	baseline = 3
 }
 
 pub struct TextCfg {
