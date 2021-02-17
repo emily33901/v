@@ -634,6 +634,7 @@ fn (mut g Gen) method_call(node ast.CallExpr) {
 		} else if diff > 0 {
 			g.write('/*diff=$diff*/')
 			g.write([]byte{len:diff, init:`*`}.bytestr())
+		}
 	}
 	if g.is_autofree && node.free_receiver && !g.inside_lambda && !g.is_builtin_mod {
 		// The receiver expression needs to be freed, use the temp var.
